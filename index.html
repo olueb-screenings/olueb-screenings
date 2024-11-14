@@ -8,8 +8,7 @@
         body {
             background-image: url('IMG_7309.jpg');
             background-repeat: repeat;
-            background-size: 5c:\Users\user\Downloads\Telegram Desktop\blank (2).png0%;
-            background-color: #000; /* Fallback color in case the image doesn't load */
+            background-color: #000; /* Fallback color */
             color: #FFFFFF;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -18,37 +17,59 @@
         }
         .container {
             width: 80%;
+            max-width: 1200px;
             margin: 0 auto;
+        }
+        .highlight {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 0.1em 0.2em;
+            margin: 0.5em 0;
+            display: block;
+            text-align: center;
+            -webkit-text-stroke: 0.2px black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .highlight-violet {
+            color: #800080;
+        }
+        .highlight-red {
+            color: red;
+        }
+        .highlight-blue {
+            color: blue;
         }
         .flame-separator {
             width: 100%;
-            height: 50px; /* Adjust to match your flames image height */
+            height: 50px;
             background-image: url('flames.gif');
             background-repeat: repeat-x;
-            background-size: contain; /* Adjust as needed */
+            background-size: contain;
             margin: 20px 0;
         }
-
-        .image-container {
-            text-align: center;
-            margin-top: 20px;
-        }
         img {
-            /* Remove width and height to allow images to display at their original size */
-            max-width: 50%; /* Ensures images don't exceed the container width */
-            height: auto;    /* Maintains aspect ratio */
+            max-width: 100%;
+            height: auto;
         }
-
+        /* General h1 Styles */
         h1 {
-            font-size: 32px;
+            font-size: 2em;
             margin-top: 20px;
+        }
+        /* Yellow Text in Comic Sans */
+        .yellow-text {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            font-size: 2em;
+            color: #fbff00; /* Yellow color */
+            text-shadow: 3px 3px #000000;
         }
         p {
-            font-size: 18px;
+            font-size: 1em;
+            margin: 20px 0;
         }
         .wordart {
             font-family: 'Arial Black', 'Impact', sans-serif;
-            font-size: 72px;
+            font-size: 3em;
             text-align: center;
             margin: 20px 0;
             line-height: 1;
@@ -59,30 +80,26 @@
             padding: 20px;
             display: inline-block;
         }
-        .purple-wordart-skewed {
-            transform: skewX(-20deg);
-        }
         .purple-wordart-text-shadow {
             text-shadow: 2px 2px 5px #000000;
         }
-        .purple-wordart-text-black {
-            color: #000000;
+        @media (max-width: 600px) {
+            .wordart {
+                font-size: 2em;
+            }
+            .highlight {
+                font-size: 1.2em;
+            }
+            .yellow-text {
+                font-size: 1.5em;
+            }
         }
-        h1 {
-            font-family: 'Permanent Marker', cursive;
-            font-size: 64px;
-            margin-top: 20px;
-            color: #fbff00; /* Purple color for a 90's vibe */
-            text-shadow: 3px 3px #000000; /* Optional: Add a shadow for depth */
-        }
-        
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome!!!</h1>
+        <h1 class="yellow-text">Welcome!!!</h1>
         
-        <!-- Flame separator -->
         <!-- Flame separator -->
         <div class="flame-separator"></div>
 
@@ -94,48 +111,58 @@
         <!-- Flame separator -->
         <div class="flame-separator"></div>
 
-        <p>Here you can see our screenings and the dates!!</p>
+        <p>
+            olüb, the underground high-end cinema club, is a haven for cultural exchange, a space for aesthetic dialogue, as well as a tight-knit community of cinema enthusiasts. Through our meticulously curated and skillfully pirated film programmes, we dive into the cinematic history of the twentieth century, reinterpreting and revitalising precious pieces from the past yet sparking fresh contemporary debate.
+        </p>
 
+        <div class="highlight highlight-violet">Japanese New Wave: Rebellion of Form</div>
+        <div class="highlight highlight-red">Soviet Gems: From Eisenstein to Hamdamov</div>
+        <div class="highlight highlight-blue">German Tears: Desire, Power, and Decay (R. W. Fassbinder Retrospective)</div>
+        
+        <!-- Audio player with placeholder source -->
         <audio aria-label="Play music while you browse" controls>
-            <source src="Aphex Twin - Stone In Focus [ ezmp3.cc ].mp3" type="audio/mpeg">
+            <source src="placeholder.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     
-   <!-- WordArt Text -->
-   <marquee behavior="scroll" direction="left" scrollamount="30">
-        COMING SOON!!!!!!!!!!!!!!
-    </marquee>
-        <h2 class="wordart purple-wordart-base purple-wordart-text-shadow">Pastoral: To Die in the Country</h2>
-    </div>
+        <!-- Marquee Text -->
+        <marquee behavior="scroll" direction="left" scrollamount="30" loop="infinite">
+            !!!COMING SOON!!! 
+        </marquee>
 
-    <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">1974, dir. Shūji Terayama</h3>
+        <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">Pastoral: To Die in the Country</h3>
+        <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">1974, dir. Shūji Terayama</h3>
+        <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">20.11.2024 20:30</h3>
     
-    <div class="image-container">
-        <img src="pastoral.jpg" alt="Centered Blank Image">
-    </div>
+        <div class="image-container">
+            <img src="pastoral.jpg" alt="Pastoral Movie Poster">
+        </div>
 
-    <picture>
-        <source srcset="consbar.gif" media="(prefers-reduced-motion: no-preference)">
-        <img src="consbar.png" alt="Under construction">
-    </picture>
+        <picture>
+            <source srcset="consbar.gif" media="(prefers-reduced-motion: no-preference)">
+            <img src="consbar.png" alt="Under construction">
+        </picture>
 
-    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-    <script>
-        // Initialize the cursor effect
-        new cursoreffects.fairyDustCursor();
-    </script>
+        <!-- Cursor Effect Script -->
+        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+        <script>
+            // Initialize the cursor effect
+            new cursoreffects.fairyDustCursor();
+        </script>
 
-    <h1>OUR PHOTOGALLERY</h1>
+        <h1 class="yellow-text">OUR PHOTOGALLERY</h1>
 
-    <div class="image-container">
-        <img src="dEVwh_0YzGY.jpg" alt="Centered Blank Image">
-    </div>
+        <div class="image-container">
+            <img src="20241107_012914.jpg" alt="Photo 1">
+        </div>
 
-    <div class="image-container">
-        <img src="3Rbp_ZUOctc.jpg" alt="Centered Blank Image">
-    </div>
+        <div class="image-container">
+            <img src="20241107_012910.jpg" alt="Photo 2">
+        </div>
 
-
+        <div class="image-container">
+            <img src="20241107_012624.jpg" alt="Photo 3">
+        </div>
+    </div> <!-- End of container -->
 </body>
 </html>
-
