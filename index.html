@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to OLÜB</title>
     <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('Helvetica.ttf') format('truetype'); /* TrueType fallback */
+            font-weight: normal;
+            font-style: normal;
+        }
         body {
             background-image: url('IMG_7309.jpg');
             background-repeat: repeat;
             background-color: #000; /* Fallback color */
             color: #FFFFFF;
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif; 
             text-align: center;
             margin: 0;
             padding: 0;
+        }
+        @font-face {
+            font-family: 'Comic Sans MS';
+            src: url('Comic Sans MS.ttf') format('truetype'); /* TrueType fallback */
+            font-weight: normal;
+            font-style: normal;
         }
         .container {
             width: 80%;
@@ -68,7 +80,7 @@
             margin: 20px 0;
         }
         .wordart {
-            font-family: 'Arial Black', 'Impact', sans-serif;
+            font-family: 'Helvetica', 'Helvetica', sans-serif;
             font-size: 3em;
             text-align: center;
             margin: 20px 0;
@@ -80,7 +92,25 @@
             padding: 20px;
             display: inline-block;
         }
-        .purple-wordart-text-shadow {
+        .red-wordart-base {
+            color: #FFFFFF;
+            background-color: #bd0c0c;
+            padding: 20px;
+            display: inline-block;
+        }
+        .blue-wordart-base {
+            color: #FFFFFF;
+            background-color: #0c4abd;
+            padding: 20px;
+            display: inline-block;
+        }
+        .yellow-helvetica {
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-size: 2em;
+            color: #fbff00; /* Yellow color */
+            text-shadow: 2px 2px #000000;
+        }
+        .wordart-text-shadow {
             text-shadow: 2px 2px 5px #000000;
         }
         @media (max-width: 600px) {
@@ -111,13 +141,34 @@
         <!-- Flame separator -->
         <div class="flame-separator"></div>
 
-        <p>
+        <p class="yellow-helvetica">
             olüb, the underground high-end cinema club, is a haven for cultural exchange, a space for aesthetic dialogue, as well as a tight-knit community of cinema enthusiasts. Through our meticulously curated and skillfully pirated film programmes, we dive into the cinematic history of the twentieth century, reinterpreting and revitalising precious pieces from the past yet sparking fresh contemporary debate.
         </p>
 
-        <div class="highlight highlight-violet">Japanese New Wave: Rebellion of Form</div>
-        <div class="highlight highlight-red">Soviet Gems: From Eisenstein to Hamdamov</div>
-        <div class="highlight highlight-blue">German Tears: Desire, Power, and Decay (R. W. Fassbinder Retrospective)</div>
+        <div class="flame-separator"></div>
+
+        <p class="yellow-helvetica" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; white-space: nowrap;">
+            <img src="insta.webp" alt="Instagram Logo" style="height: auto; width: auto; max-width: 20%; max-height: 60px; flex-shrink: 0;">
+            <span style="font-family: 'Helvetica', Arial, sans-serif; color: yellow; text-align: center; flex-grow: 1;">
+                OUR INSTAGRAM: 
+                <br>
+                <a href="https://instagram.com/oluebscreenings" 
+                   style="color: yellow; text-decoration: underline;">
+                    instagram.com/oluebscreenings
+                </a>
+            </span>
+            <img src="insta.webp" alt="Instagram Logo" style="height: auto; width: auto; max-width: 20%; max-height: 60px; flex-shrink: 0;">
+        </p>
+        
+        
+        
+            
+
+        <div class="flame-separator"></div>
+
+        <h3 class="wordart purple-wordart-base wordart-text-shadow">Japanese New Wave: Rebellion of Form</h3>
+        <h3 class="wordart red-wordart-base wordart-text-shadow">Soviet Gems: From Eisenstein to Hamdamov</h3>
+        <h3 class="wordart blue-wordart-base wordart-text-shadow">German Tears: Desire, Power, and Decay (R. W. Fassbinder Retrospective)</h3>
         
         <!-- Audio player with placeholder source -->
         <audio aria-label="Play music while you browse" controls>
@@ -126,16 +177,30 @@
         </audio>
     
         <!-- Marquee Text -->
+        <h1 class="yellow-text">SCREENINGS</h1>
+    
         <marquee behavior="scroll" direction="left" scrollamount="30" loop="infinite">
             !!!COMING SOON!!! 
         </marquee>
 
-        <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">Pastoral: To Die in the Country</h3>
-        <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">1974, dir. Shūji Terayama</h3>
-        <h3 class="wordart purple-wordart-base purple-wordart-text-shadow">20.11.2024 20:30</h3>
+        <h3 class="wordart purple-wordart-base wordart-text-shadow">Pastoral: To Die in the Country</h3>
+        <br>
+        <h3 class="wordart purple-wordart-base wordart-text-shadow">1974, dir. Shūji Terayama</h3>
+        <br>
+        <h3 class="wordart purple-wordart-base wordart-text-shadow">20.11.2024 20:30</h3>
     
         <div class="image-container">
             <img src="pastoral.jpg" alt="Pastoral Movie Poster">
+        </div>
+
+        <h3 class="wordart red-wordart-base wordart-text-shadow">Ivan the Terrible</h3>
+        <br>
+        <h3 class="wordart red-wordart-base wordart-text-shadow">1945, dir. Ivan Eisenstein</h3>
+        <br>
+        <h3 class="wordart red-wordart-base wordart-text-shadow">21.11.2024 19:00</h3>
+    
+        <div class="image-container">
+            <img src="3.png" alt="Ivan Movie Poster">
         </div>
 
         <picture>
