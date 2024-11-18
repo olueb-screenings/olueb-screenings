@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to OLÜB</title>
     <style>
+        @media (max-width: 1024px) {
+            .yellow-text {
+                font-size: 1.8em;
+            }
+        }
+
+        /* For landscape phones and small tablets */
+        @media (max-width: 768px) {
+            .yellow-text {
+                font-size: 1.5em;
+            }
+        }
+
+        /* For portrait phones */
+        @media (max-width: 480px) {
+            .yellow-text {
+                font-size: 1.2em;
+            }
+        }
         @font-face {
             font-family: 'Helvetica';
             src: url('Helvetica.ttf') format('truetype'); /* TrueType fallback */
@@ -147,17 +166,16 @@
 
         <div class="flame-separator"></div>
 
-        <p class="yellow-helvetica" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; white-space: nowrap;">
-            <img src="insta.webp" alt="Instagram Logo" style="height: auto; width: auto; max-width: 20%; max-height: 60px; flex-shrink: 0;">
-            <span style="font-family: 'Helvetica', Arial, sans-serif; color: yellow; text-align: center; flex-grow: 1;">
-                OUR INSTAGRAM: 
-                <br>
-                <a href="https://instagram.com/oluebscreenings" 
-                   style="color: yellow; text-decoration: underline;">
-                    instagram.com/oluebscreenings
-                </a>
+        <p class="yellow-helvetica" style="text-align: center; margin: 20px 0;">
+            <img src="insta.webp" alt="Instagram Logo" style="display: block; margin: 0 auto; max-width: 60px; max-height: 60px;">
+            <span style="font-family: 'Helvetica', Arial, sans-serif; color: yellow; font-size: 1.5em;">
+                OUR INSTAGRAM:
             </span>
-            <img src="insta.webp" alt="Instagram Logo" style="height: auto; width: auto; max-width: 20%; max-height: 60px; flex-shrink: 0;">
+            <br>
+            <a href="https://instagram.com/oluebscreenings" 
+               style="color: yellow; font-family: 'Helvetica', Arial, sans-serif; text-decoration: underline; font-size: 1.2em;">
+                instagram.com/oluebscreenings
+            </a>
         </p>
         
         
