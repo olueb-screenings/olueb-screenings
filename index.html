@@ -143,6 +143,44 @@
                 font-size: 1.5em;
             }
         }
+
+        .wordart{
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        line-height: 1.15;
+        display: inline-block;       /* use block if you want full-width bars */
+        color: #fff;                 /* WHITE TEXT */
+        padding: .5em .8em;
+        margin: .35em 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.35);
+        /* make sure no previous text-clip rules leak in */
+        -webkit-text-fill-color: initial;
+        -webkit-background-clip: initial;
+        }
+
+        /* Smooth gradient (not hard bands) */
+        .gradient-text{
+        --angle: 90deg;              /* tweak per item if you want tilt */
+        --c1:#fff; --c2:#fff; --c3:#fff; /* set by theme below */
+        background: linear-gradient(var(--angle),
+            var(--c1) 0%,              /* start */
+            var(--c2) 50%,             /* smooth blend through the middle */
+            var(--c3) 100%             /* end */
+        );
+        }
+
+        /* Gentle readability without covering the fill */
+        .stroke{
+        -webkit-text-stroke: 0;
+        text-shadow: 0 1px 2px rgba(0,0,0,.35);
+        }
+
+        /* Your palettes */
+        .gradient-asian   { --c1:#ffc000; --c2:#cd071e; --c3:#a599ff; }
+        .gradient-iranian { --c1:#162b3b; --c2:#3a5946; --c3:#757232; }
+        .gradient-russian { --c1:#bbb359; --c2:#54abb8; --c3:#e7708c; }
+
     </style>
 </head>
 <body>
@@ -199,6 +237,101 @@
             !!!COMING SOON!!! 
         </marquee>
             
+
+        <h1 class="yellow-text">PAST SCREENINGS</h1>
+
+        <h3 class="wordart gradient-text gradient-russian stroke">Bed and Sofa</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-russian stroke">1927, dir. Abram Room</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-russian stroke">31.07.2025 18:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="55.png" alt="season2asia">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-iranian stroke">Women Without Men</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-iranian stroke">2009, dir. Shoja Azari, Shirin Neshat</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-iranian stroke">24.07.2025 18:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="54.png" alt="season2asia">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-asian stroke">The Housemaid</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-asian stroke">1960, dir. Kim Ki‑young</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-asian stroke">17.07.2025 18:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="53.png" alt="season2asia">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-russian stroke">The Eve of Ivan Kupalo</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-russian stroke">1968, dir. Yurii Illienko</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-russian stroke">10.07.2025 18:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="russia copy.jpg" alt="season2asia">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-iranian stroke">The Wind Will Carry Us</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-iranian stroke">1999, dir. Abbas Kiarostami</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-iranian stroke">03.07.2025 18:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="iran copy.jpg" alt="season2asia">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-asian stroke">The Ballad of Narayama</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-asian stroke">1983, dir. Shōhei Imamura</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-asian stroke">26.06.2025 18:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="asia copy.jpg" alt="season2asia">
+        </div>
+
+
+        <h3 class="wordart gradient-text gradient-russian stroke">Boys</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-russian stroke">1983, dir. Dinara Asanova</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-russian stroke">19.06.2025 17:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="49 (2).png" alt="patsani">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-iranian stroke">A moment of innocence</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-iranian stroke">1996, dir. Mohsen Makhmalbaf</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-iranian stroke">12.06.2025 17:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="48 (2).png" alt="amoi">
+        </div>
+
+        <h3 class="wordart gradient-text gradient-asian stroke">All About Lily Chou-Chou</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-asian stroke">2001, dir. Shunji Iwai</h3>
+        <br>
+        <h3 class="wordart gradient-text gradient-asian stroke">05.06.2025 17:00 GMT</h3>
+    
+        <div class="image-container">
+            <img src="47 (2).png" alt="aalcc">
+        </div>
+
+
         <h3 class="wordart white-wordart-base wordart-text-shadow">To Each His Own Cinema (!SECOND SEASON ANNOUNCEMENT!)</h3>
         <br>
         <h3 class="wordart white-wordart-base wordart-text-shadow">2007, various directors</h3>
@@ -216,11 +349,6 @@
         <div class="image-container">
             <img src="russia.png" alt="season2russia">
         </div>
-
-        <h3 class="wordart white-wordart-base wordart-text-shadow">!UPDATES ARE COMING!</h3>
-        <br>        
-
-        <h1 class="yellow-text">PAST SCREENINGS</h1>
 
         <h3 class="wordart blue-wordart-base wordart-text-shadow">Querelle</h3>
         <br>
